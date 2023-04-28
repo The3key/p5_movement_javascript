@@ -49,7 +49,10 @@ function draw() {
     xvol += 5;
   }
 }
-//keypress
+//key pressed
+//i have to use ascii key codes.
+// go to https://www.toptal.com/developers/keycode
+// very useful 
 function keyPressed() {
   if (keyIsDown(68)) {
     //d
@@ -66,6 +69,8 @@ function keyPressed() {
     movingy = true;
   }
   if (keyIsDown(87) && y == 75&&x >= 85) {
+    //w
+    // on platform
     yvol = +15;
     movingy = true;
   }
@@ -86,6 +91,7 @@ function hitbox() {
     touchinghb = true;
     yvol = 0;
   }
+  // applys gravity if not on floor or platform
   touchinghb = false;
   if (yvol <= -1 && touchinghb == true) {
     yvol = 0;
