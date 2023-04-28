@@ -15,7 +15,7 @@ function setup() {
 function draw() {
   background(220);
   //will draw the cube when moving
-  // has a 
+  // has a kind of cool effect
   square(x, y, 50);
   keyPressed();
 
