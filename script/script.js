@@ -1,9 +1,12 @@
 var x = 10;
 var y = 0;
+// velocity 
 var xvol = 0;
 var yvol = 0;
+// if a object is moving 
 var movingx = false;
 var movingy = false;
+// if on platform
 var touchinghb = false;
 function setup() {
   createCanvas(700, 500);
@@ -11,6 +14,8 @@ function setup() {
 
 function draw() {
   background(220);
+  //will draw the cube when moving
+  // has a 
   square(x, y, 50);
   keyPressed();
 
